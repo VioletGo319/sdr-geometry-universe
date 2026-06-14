@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#02040a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SDR Universe" />
+    <meta
+      name="description"
+      content="An interactive SDR geometry universe for X = Γf(Y) + Γ₀Φ(u) + ε."
+    />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <title>SDR Geometry Universe</title>
+  </head>
+  <body>
+    <canvas id="sdr-canvas" aria-label="Interactive SDR aesthetic gallery"></canvas>
+
+    <aside class="sidebar" aria-label="Gallery navigation">
+      <div class="brand">
+        <p>SDR Gallery</p>
+        <strong>X = Γf(Y) + Γ₀Φ(u) + ε</strong>
+      </div>
+
+      <nav class="gallery-nav" aria-label="Visual metaphors">
+        <button type="button" class="active" data-page="0"><span>01</span>Cosmic Universe</button>
+        <button type="button" data-page="1"><span>02</span>Hidden Structure</button>
+        <button type="button" data-page="2"><span>03</span>Crystallization</button>
+        <button type="button" data-page="3"><span>04</span>Representation</button>
+        <button type="button" data-page="4"><span>05</span>Latent Dynamics</button>
+        <button type="button" data-page="5"><span>06</span>Cosmic Planning</button>
+        <button type="button" data-page="6"><span>07</span>From Chaos to Intelligence</button>
+        <button type="button" data-page="7"><span>08</span>World Models</button>
+      </nav>
+    </aside>
+
+    <main class="story-panel" aria-live="polite">
+      <p id="page-kicker">01 / Cosmic Universe</p>
+      <h1 id="page-title">Birth of Structure</h1>
+      <p id="page-copy">Chaos condenses into latent structure, signal geometry, observation, and finally representation.</p>
+
+      <div class="equation-row" aria-label="SDR equation">
+        <span class="x-term">X</span>
+        <span>=</span>
+        <span class="gamma-term">Γf(Y)</span>
+        <span>+</span>
+        <span class="gamma0-term">Γ₀Φ(u)</span>
+        <span>+</span>
+        <span class="epsilon-term">ε</span>
+      </div>
+    </main>
+
+    <section class="gallery-controls" aria-label="Presentation controls">
+      <button type="button" id="prev-page" aria-label="Previous gallery page">Prev</button>
+      <button type="button" id="autoplay-toggle" aria-pressed="false">Autoplay</button>
+      <button type="button" id="next-page" aria-label="Next gallery page">Next</button>
+    </section>
+
+    <section class="core-caption" aria-label="Core representation">
+      <span>Representation</span>
+      <strong>u = B<sup>T</sup>X</strong>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

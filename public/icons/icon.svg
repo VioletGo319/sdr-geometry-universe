@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SDR Universe icon">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#12355f"/>
+      <stop offset="58%" stop-color="#07182f"/>
+      <stop offset="100%" stop-color="#02040a"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="88" y1="140" x2="420" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffe59a"/>
+      <stop offset="52%" stop-color="#f6c85e"/>
+      <stop offset="100%" stop-color="#ff8f3d"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="88" y1="360" x2="430" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a8ffe5"/>
+      <stop offset="50%" stop-color="#65caff"/>
+      <stop offset="100%" stop-color="#4277ff"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="184" fill="none" stroke="#65caff" stroke-opacity=".18" stroke-width="2"/>
+  <circle cx="256" cy="256" r="132" fill="none" stroke="#f6c85e" stroke-opacity=".16" stroke-width="2"/>
+  <path d="M96 302C155 179 255 154 416 186" fill="none" stroke="url(#gold)" stroke-width="26" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M100 214C172 338 282 366 420 286" fill="none" stroke="url(#blue)" stroke-width="22" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="256" cy="256" r="46" fill="#edf6ff" fill-opacity=".92" filter="url(#glow)"/>
+  <circle cx="256" cy="256" r="20" fill="#02040a"/>
+  <g fill="#edf6ff" fill-opacity=".86">
+    <circle cx="134" cy="132" r="5"/>
+    <circle cx="384" cy="124" r="4"/>
+    <circle cx="404" cy="382" r="5"/>
+    <circle cx="126" cy="374" r="3.5"/>
+    <circle cx="214" cy="92" r="3"/>
+    <circle cx="318" cy="420" r="3"/>
+  </g>
+</svg>

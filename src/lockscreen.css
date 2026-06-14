@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+  background: #01030a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.lockscreen-body {
+  background:
+    radial-gradient(circle at 25% 74%, rgba(44, 90, 166, 0.22), transparent 38%),
+    radial-gradient(circle at 70% 72%, rgba(164, 97, 255, 0.09), transparent 42%),
+    linear-gradient(180deg, #020612 0%, #01030a 54%, #000208 100%);
+}
+
+#lockscreen-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
