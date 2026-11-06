@@ -1,4 +1,12 @@
 # SDR Geometry Universe
+### Interactive research communication · Three.js · PWA
+
+An interactive visual explanation of sufficient dimension reduction, designed to make high-dimensional signal, latent structure, and noise easier to discuss.
+
+**Start here:** [main visualization](src/main.js) · [local setup](#run-locally) · [build instructions](#build)
+
+**Portfolio scope:** This project demonstrates interactive scientific communication and frontend implementation. Its scenes are conceptual visual metaphors, not fitted-model outputs, quantitative validation, or a trained world model.
+
 
 A standalone Three.js / PWA museum-style gallery for the SDR model:
 
